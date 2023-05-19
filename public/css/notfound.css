@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 10rem;
+    display: inline;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+img {
+    height: 10rem;
+    margin: -1rem;
+}
+#notfound_button {
+    width: 200px;
+    background-color: #fc6704ff;
+    color: white;
+    border: 2px solid #fc6704ff;
+    border-radius: 6px;
+    margin: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+#notfound_button:hover {
+    background-color: white;
+    color: #fc6704ff;
+}

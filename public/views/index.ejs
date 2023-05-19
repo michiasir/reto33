@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michi</title>
+    <script src="https://kit.fontawesome.com/a860ab3c5f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/pictograma_dia.svg">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+<nav id="nav">
+    <div></div>
+    <div></div>
+    <a id="button" href="/"><img id="logo" src="img/michilogo_dia.png" alt="michi_dia"></a>
+    <div></div>
+    <% if (!hasToken) { %>
+        <div></div>
+    <% } else { %>
+        <p id="navUsername">Welcome, <%= username %></p>
+    <% } %>
+</nav>
+
+<button id="day_night_button" onclick="day_night(event)">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-certificate" style="display: none;"></i>
+</button>
+
+<% if (hasToken) { %>
+    <button id="logout_button" onclick="logoutButton()">
+        <i class="fa-solid fa-power-off"></i>
+    </button>
+<% } %>
+
+<% if (isAdmin) { %>
+    <button id="register_button" onclick="registerButton()">
+        <i class="fa-solid fa-user-plus"></i>
+    </button>
+<% } %>
+
+
+<section id="menu">
+    <a class="menuItems" style="background-image: url(img/cpd.jpg); background-size: cover; background-position: 20%;" href="/datacenter">DATA CENTER</a>
+    <a class="menuItems" style="background-image: url(img/history.jpg); background-size: cover; background-position: 20%;" href="/statistics">STATISTICS</a>
+    <a class="menuItems" style="background-image: url(img/xml.jpg); background-size: cover; background-position: 20%;" href="/xml">XML CONVERTER</a>
+    <a class="menuItems" style="background-image: url(img/login.png); background-size: cover; background-position: 20%;" href="/login">LOGIN</a>
+</section>
+
+<script src="../js/day_night.js"></script>
+<script src="../js/logout_register.js"></script>
+</body>
+</html>

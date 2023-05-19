@@ -1,0 +1,32 @@
+#menu {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.menuItems, .menuItems-night {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem;
+    height: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    text-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+.menuItems:hover {
+    border: 3px solid #fc6704ff;
+    color: white;
+}
+.menuItems-night:hover {
+    border: 3px solid #41647eff;
+    color: white;
+}

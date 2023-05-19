@@ -1,0 +1,181 @@
+#nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 3px solid #fc6704ff;
+}
+.navItem {
+    height: 100%;
+    line-height: 10vh;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: #fc6704ff;
+}
+#nav div {
+    height: 100%;
+    line-height: 10vh;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: #fc6704ff;
+}
+.navItem-night {
+    height: 100%;
+    line-height: 10vh;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: #41647eff;
+}
+.navItem:hover{
+    background-color: #fc6704ff;
+    color: white;
+    cursor: pointer;
+}
+.navItem-night:hover {
+    background-color: #41647eff;
+    color: white;
+    cursor: pointer;
+}
+#navUsername {
+    height: 100%;
+    line-height: 10vh;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: #fc6704ff;
+}
+#button {
+    margin-top: 4rem;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: white;
+}
+#logo {
+    max-height: 8rem;
+    margin-top: 2rem;
+}
+#logo:hover{
+    background-color: white;
+    color: black;
+}
+#day_night_button{
+    background-color: #fc6704ff;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 14vh;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#day_night_button i {
+    margin-top: 1px;
+    font-size: 1.6rem;
+    color: white;
+}
+#day_night_button:hover {
+    top: 13vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+#logout_button {
+    background-color: #fc6704ff;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 22vh;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#logout_button i {
+    margin-top: 1px;
+    font-size: 1.6rem;
+    color: white;
+}
+#logout_button:hover {
+    top: 21vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+#register_button {
+    background-color: #fc6704ff;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 30vh;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#register_button i {
+    margin-top: 1px;
+    font-size: 1.1rem;
+    color: white;
+}
+#register_button:hover {
+    top: 29vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+#logout_button_night {
+    background-color: #41647eff;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 22vh;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#logout_button_night i {
+    margin-top: 1px;
+    font-size: 1.6rem;
+    color: white;
+}
+#register_button_night {
+    background-color: #41647eff;
+    border: none;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: 30vh;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#register_button_night i {
+    margin-top: 1px;
+    font-size: 1.1rem;
+    color: white;
+}

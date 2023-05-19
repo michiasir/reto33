@@ -1,0 +1,40 @@
+#formContainer {
+    padding-top: 2rem;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#formulario {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fc6704ff;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input {
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+input[type=submit] {
+    width: 100px;
+    background-color: #fc6704ff;
+    color: white;
+    border: 2px solid #fc6704ff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #fc6704ff;
+}

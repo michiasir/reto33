@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data center</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        const socket = io();
+    
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+    
+        function presionarBoton() {
+            console.log('Emitting start event');
+            socket.emit('presionar_boton');
+        }
+    </script>
+    <script src="../../" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/pictograma_dia.svg">
+    <link rel="stylesheet" href="../css/datacenter.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+<nav id="nav">
+    <a class="navItem" href="/datacenter">DATA CENTER</a>
+    <a class="navItem" href="/xml">XML CONVERTER</a>
+    <a id="button" href="/"><img id="logo" src="img/michilogo_dia.png" alt="michi_dia"></a>
+    <a class="navItem" href="/statistics">STATISTICS</a>
+    <% if (!hasToken) { %>
+        <a class="navItem" href="/login">LOGIN</a>
+    <% } else { %>
+        <p id="navUsername">Welcome, <%= username %></p>
+    <% } %>
+</nav>
+
+<button id="day_night_button" onclick="day_night(event)">
+    <i class="fa-solid fa-moon"></i>
+    <i class="fa-solid fa-certificate" style="display: none;"></i>
+</button>
+
+<% if (hasToken) { %>
+    <button id="logout_button" onclick="logoutButton()">
+        <i class="fa-solid fa-power-off"></i>
+    </button>
+<% } %>
+
+<% if (isAdmin) { %>
+    <button id="register_button" onclick="registerButton()">
+        <i class="fa-solid fa-user-plus"></i>
+    </button>
+<% } %>
+
+<div id="mainContainer">
+    <img src="http://192.168.4.77:8000/stream.mjpg" width="1600" height="900" id="stream" />
+    <button onclick="presionarBoton()">Presionar</button>
+
+    <div id="dataContainer">
+        <div id="temp">Temp: 32ºC</div>
+        <div id="hum">Hum: 48%</div>
+    </div>
+</div>
+
+
+<script src="../js/day_night.js"></script>
+<script src="../js/logout_register.js"></script>
+</body>
+</html>

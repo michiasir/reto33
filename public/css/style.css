@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+.night-mode {
+    background-color: #131e26ff; /* azul oscuro */
+    /* Otros estilos para el modo noche */
+}
+
+.night-mode .dynamic-button {
+    background-color: #41647eff; /* azul claro */
+    /* Otros estilos para los botones en modo noche */
+}
